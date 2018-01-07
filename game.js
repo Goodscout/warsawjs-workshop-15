@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displayRoundInformation() {
 		var round = document.getElementById('round-info');
 
-		round.className = playerClasses[currentPlayer];
+		round.className = `background-${currentPlayer}`;
 		round.innerHTML = `Round for ${names[currentPlayer]}`;
     }
 

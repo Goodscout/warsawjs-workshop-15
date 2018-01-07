@@ -24,6 +24,12 @@
 	background-position: center;
 	background-size: cover;
 }
+.background-playerA {
+	background-color: rgb(129, 12, 12);
+}
+.background-playerB {
+	background-color:  rgb(26, 53, 95);
+}
 
 .blue {
 	background-image: url("http://www.clker.com/cliparts/V/n/q/0/3/0/number-2-grey-flat-icon-x-hi.png");
@@ -38,7 +44,7 @@
 	margin-top: 15px;
 	letter-spacing: 1px;
 	font-size: 30px;	
-	color: #414141; 
+	color: #fafafa; 
 	box-shadow: 5px 5px 5px rgb(99, 98, 98);
 }
 .scores {
