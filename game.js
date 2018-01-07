@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var playerClass = playerClasses[currentPlayer];
             console.log('clicked', this);//wywołana pokażdym kliknięciu, w konsoli pojawia się napis clicked przy każdym divie
             this.classList.add(playerClass);
+            
 //jeśli playerA klika to potem się ma zmieniac na playeraB 
         if(currentPlayer === 'playerA') {
             currentPlayer = 'playerB';
@@ -34,5 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         else {
             currentPlayer = 'playerA';
         }
+        this.removeEventListener('click', fieldClickHandler);
      }
 });
