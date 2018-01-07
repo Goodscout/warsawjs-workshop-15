@@ -1,5 +1,5 @@
 body {
-	background-image: url("https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+	background-color: white;
 	background-size: cover;
 }
 * {
@@ -53,7 +53,6 @@ body {
 	font-size: 20px;
 	font-weight: bold;
 	border-radius: 10px;
-	padding-top: 10px;
 }
 #playerA-score {
 	color: rgb(129, 12, 12);
