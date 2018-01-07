@@ -2,6 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    var emptyFields;
+
     //deklarujemy obiekt 
     var playerClasses = {
         'playerA': 'red',
@@ -12,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initGame();
 
     function initGame() {
+        emptyFields = 9;
+
         var fields = document.querySelectorAll('.board > div');//wszystko co ma klasę board i jest divem jest zaznaczone
 
         //ustawiamy playera A jako inicjującego
@@ -36,5 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
             currentPlayer = 'playerA';
         }
         this.removeEventListener('click', fieldClickHandler);
+        emptyFields--; //odejmuje o 1, mozesz zapisać "emptyFields = emptyFields - 1"albo emptyFields -=1
+       if (emptyFields === 0) {
+           alert('Co bys nie zrobił Marta i tak wygrała:)')
+       }
      }
 });
