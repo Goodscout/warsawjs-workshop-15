@@ -20,11 +20,15 @@
 }
 
 .red {
-	background-color: rgb(129, 12, 12);
+	background-image: url("http://www.roborealm.com/uploads/26090_1.jpg");
+	background-position: center;
+	background-size: cover;
 }
 
 .blue {
-	background-color: rgb(26, 53, 95);
+	background-image: url("http://www.clker.com/cliparts/V/n/q/0/3/0/number-2-grey-flat-icon-x-hi.png");
+	background-position: center;
+	background-size: cover;
 }
 #round-info {
 	height: 70px;
@@ -34,8 +38,7 @@
 	margin-top: 15px;
 	letter-spacing: 1px;
 	font-size: 30px;	
-	color: #ffffff; 
-	text-shadow: 1px 1px 1px black;
+	color: #414141; 
 	box-shadow: 5px 5px 5px rgb(99, 98, 98);
 }
 .scores {
@@ -56,6 +59,13 @@
 }
 #playerB-score {
 	color: rgb(26, 53, 95);
+}
+.buttons-style {
+	background-color: rgb(77, 77, 77);
+	color: white;
+	letter-spacing: 1px;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 

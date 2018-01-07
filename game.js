@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var scores = {
 		'playerA': 0,
 		'playerB': 0
+    }
+    var names = {
+		'playerA': 'playerA',
+		'playerB': 'playerB'
 	}
 
     var currentPlayer;
@@ -23,7 +27,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		displayPlayerScore('playerA');
 		displayPlayerScore('playerB');
-	});
+    });
+    
+    for (let player in names) {
+		let renameButton = document.getElementById(`${player}-rename`);
+		renameButton.innerText = `Rename ${player}`;
+		renameButton.addEventListener('click', function () {
+			names[player] = prompt(`Rename ${player} to:`);
+			renameButton.innerText = `Rename ${names[player]}`;
+			displayRoundInformation();
+			displayPlayerScore('playerA');
+			displayPlayerScore('playerB');
+		})
+	}
 
 	function displayPlayerScore(player) {
 		var score = document.getElementById(`${player}-score`);
@@ -39,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		var round = document.getElementById('round-info');
 
 		round.className = playerClasses[currentPlayer];
-		round.innerHTML = `Round for ${currentPlayer}`;
+		round.innerHTML = `Round for ${names[currentPlayer]}`;
     }
 
     function initGame() {
