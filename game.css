@@ -62,6 +62,7 @@
 }
 #playerA-score {
 	color: rgb(129, 12, 12);
+	
 }
 #playerB-score {
 	color: rgb(26, 53, 95);
@@ -72,6 +73,17 @@
 	letter-spacing: 1px;
 	padding: 10px;
 	border-radius: 10px;
+	width: 100px;
+}
+h3 {
+	background-color: rgb(129, 12, 12);
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 50px;
+	letter-spacing: 1px;
+	font-size: 30px;
+	
 }
 
 
