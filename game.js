@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function initGame() {
         emptyFields = 9;
+        console.log('dziala');
 
         //ustawiamy playera A jako inicjującego
 
@@ -22,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fields.forEach(field => {
         field.addEventListener('click', fieldClickHandler)//iterujesz po każdym elemencie field i jak jest kliknęcie to wywołuje się funkcja fieldClickHandler
-        });
+        field.className ='';    
+    });    
     }
 
     function fieldClickHandler() {
@@ -41,7 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
         emptyFields--; //odejmuje o 1, mozesz zapisać "emptyFields = emptyFields - 1"albo emptyFields -=1
        checkWinner();
         if (emptyFields === 0) {
-           alert('game over')
+            setTimeout(function () {
+                alert('Game over')
+                initGame();
+            }, 100)
        }
     }
     function checkWinner() {
@@ -58,11 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (row1 === 'redredred'|| row2 === 'redredred' || row3 === 'redredred' || col1 === 'redredred' || col2 === 'redredred' || col3 === 'redredred' || diag1 === 'redredred' || diag2 === 'redredred') {
 
-            alert('playerA won!')
+            setTimeout(function () {
+                alert('playerA won!')
+                initGame();
+            }, 100) 
         }
         if (row1 === 'blueblueblue'|| row2 === 'blueblueblue' || row3 === 'blueblueblue' || col1 === 'blueblueblue' || col2 === 'blueblueblue' || col3 === 'blueblueblue' || diag1 === 'blueblueblue' || diag2 === 'blueblueblue') {
             
-            alert('playerB won!')
+            setTimeout(function () {
+                alert('playerB won!')
+                initGame();
+            }, 100) 
         }
-    }   
+    }
 });
