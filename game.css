@@ -25,10 +25,10 @@
 	background-size: cover;
 }
 .background-playerA {
-	background-color: rgb(129, 12, 12);
+	background-color: rgb(233, 12, 12);
 }
 .background-playerB {
-	background-color:  rgb(26, 53, 95);
+	background-color: rgb(37, 56, 85);
 }
 
 .blue {
@@ -61,11 +61,11 @@
 	border-radius: 10px;
 }
 #playerA-score {
-	color: rgb(129, 12, 12);
+	color: rgb(233, 12, 12);
 	
 }
 #playerB-score {
-	color: rgb(26, 53, 95);
+	color: rgb(37, 56, 85);
 }
 .buttons-style {
 	background-color: rgb(77, 77, 77);
@@ -76,7 +76,7 @@
 	width: 100px;
 }
 h3 {
-	background-color: rgb(129, 12, 12);
+	background-color: rgb(223, 178, 29);
 	color: white;
 	text-align: center;
 	padding: 10px;
