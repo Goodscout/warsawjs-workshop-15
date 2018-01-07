@@ -14,5 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function fieldClickHandler() {
             console.log('clicked', this);//wywołana pokażdym kliknięciu, w konsoli pojawia się napis clicked przy każdym divie
+            this.classList.add("red");
         }
 });
