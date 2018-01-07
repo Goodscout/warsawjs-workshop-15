@@ -1,4 +1,7 @@
-
+body {
+	background-image: url("https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+	background-size: cover;
+}
 * {
 	box-sizing: border-box;
 }
@@ -8,21 +11,56 @@
 	width: 300px;
 	margin: 0 auto;
 	font-size: 0;
+	margin-top: 50px;
+	box-shadow: 5px 5px 5px rgb(99, 98, 98);
 }
 
 .board div {
 	height: 100px;
 	width: 100px;
 	display: inline-block;
-	border: 1px solid grey;
+	border: 1px solid rgb(49, 49, 49);
 }
 
 .red {
-	background-color: crimson;
+	background-color: rgb(129, 12, 12);
 }
 
 .blue {
-	background-color: cornflowerblue;
+	background-color: rgb(26, 53, 95);
 }
+#round-info {
+	height: 70px;
+	width: 100%;
+	text-align: center;
+	padding: 17px;
+	margin-top: 15px;
+	letter-spacing: 1px;
+	font-size: 30px;	
+	color: #ffffff; 
+	text-shadow: 1px 1px 1px black;
+	box-shadow: 5px 5px 5px rgb(99, 98, 98);
+}
+.scores {
+	margin-left: 35%;
+	margin-top: 50px;
+	height: 200px;
+	background-color: rgba(253, 253, 253, 0.6);
+	color: rgb(54, 54, 54);
+	letter-spacing: 1px;
+	text-align: center;
+	width: 30%;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+	padding-top: 10px;
+}
+#playerA-score {
+	color: rgb(129, 12, 12);
+}
+#playerB-score {
+	color: rgb(26, 53, 95);
+}
+
 
 
